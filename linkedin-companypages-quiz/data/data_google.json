@@ -1,0 +1,38 @@
+[
+  {
+  "question": "What is the company slogan of Google?",
+  "answers": [
+    "A problem isn't truly solved until it's solved for all.",
+    "Googlers build products for everyone.",
+    "Bring your insight and imagination.",
+    "Together, we can make a difference."
+  ]
+},
+{
+  "question": "Which product(s) does Google create?",
+  "answers": [
+    "Search, Ads, Mobile, Android, Online Video, Apps, Machine Learning, Virtual Reality, Cloud, Hardware, Artificial Intelligence, YouTube, and Software.",
+    "Chromebooks and Android phones.",
+    "Online streaming services and video games.",
+    "Financial services and medical products."
+  ]
+},
+{
+  "question": "In which financial market is Google listed?",
+  "answers": [
+    "NASDAQ",
+    "NYSE",
+    "S&P 500",
+    "Dow Jones"
+  ]
+},
+{
+  "question": "What can you find out in the company's career opportunities website?",
+  "answers": [
+    "Available job positions.",
+    "The company's financial results.",
+    "Information about their products.",
+    "The leadership team members"
+  ]
+}
+]

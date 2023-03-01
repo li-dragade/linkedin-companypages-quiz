@@ -1,0 +1,38 @@
+[
+  {
+    "question": "What is the mission of Pfizer?",
+    "answers": [
+      "To apply science and our global resources to improve health and well-being at every stage of life. We strive to provide access to safe, effective and affordable medicines and health care services to the people who need them.",
+      "To make money.",
+      "To be a leader in the biopharmaceutical industry.",
+      "To cure all diseases."
+    ]
+  },
+  {
+    "question": "What type of company is Pfizer?",
+    "answers": [
+      "Public company",
+      "Private company",
+      "Non-profit organization",
+      "Partnership"
+    ]
+  },
+  {
+    "question": "What is the size of Pfizer?",
+    "answers": [
+      "SIZE_10001+",
+      "SIZE_51-200",
+      "SIZE_201-500",
+      "SIZE_2-10"
+    ]
+  },
+  {
+    "question": "What is the status of Pfizer?",
+    "answers": [
+      "ACQUIRED",
+      "UNKNOWN",
+      "CLOSED",
+      "INACTIVE"
+    ]
+  }
+]

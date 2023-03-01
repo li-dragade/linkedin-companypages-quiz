@@ -1,0 +1,38 @@
+[
+    {
+    "question": "What year did Facebook launch?",
+    "answers": [
+        "2004",
+        "2001",
+        "1999",
+        "2002"
+    ]
+},
+{
+    "question": "What services does Meta offer its customers?",
+    "answers": [
+        "Augmented and virtual reality technologies",
+        "Software engineering and design",
+        "Cryptocurrency investments",
+        "Professional network security"
+    ]
+},
+{
+    "question": "What industry is Meta in?",
+    "answers": [
+        "Computer software",
+        "Pharmaceuticals",
+        "Telecommunications",
+        "Banking"
+    ]
+},
+{
+    "question": "What is the stock symbol of Meta's parent company, Facebook?",
+    "answers": [
+        "FB",
+        "MSFT",
+        "GOOGL",
+        "AAPL"
+    ]
+}
+]

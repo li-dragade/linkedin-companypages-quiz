@@ -1,0 +1,37 @@
+[{
+  "question": "Which technology is powered by Intel?",
+  "answers": [
+    "Self-driving cars, analytics, cloud-to-edge technology, and artificial intelligence.",
+    "Medicine, media, engineering, and intelligence.",
+    "Robotics, 3D-printing, audio engineering, and automation.",
+    "Cybersecurity, network engineering, logistics, and data science."
+  ]
+},
+{
+  "question": "What type of company is Intel?",
+  "answers": [
+    "Public company.",
+    "Non-profit organization.",
+    "Private company.",
+    "Startup."
+  ]
+},
+{
+  "question": "When was Intel founded?",
+  "answers": [
+    "Intel was not founded.",
+    "1970.",
+    "2000.",
+    "1985."
+  ]
+},
+{
+  "question": "On which stock exchange is Intel listed?",
+  "answers": [
+    "NASDAQ.",
+    "NYSE.",
+    "TSX.",
+    "LSE."
+  ]
+}
+]
