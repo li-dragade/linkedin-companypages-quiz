@@ -4,27 +4,31 @@
   "description": "quiz for linkedin company pages",
   "permissions": [
     "activeTab",
+    "scripting",
     "declarativeContent",
     "*://*.linkedin.com/company/*"
   ],
   "icons": {
-    "16": "icon16.png",
-    "32": "icon32.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
   },
   "background": {
-    "scripts": ["background.js"],
+    "scripts": ["scripts/background.js"],
     "persistent": false
   },
   "browser_action": {
-    "default_popup": "quiz.html"
+    "default_icon": "images/icon16.png",
+    "default_popup": "popup/index.html",
+    "default_title": "Company Page Quiz"
   },
 "content_scripts": [
   {
-  "matches": ["*://*.linkedin.com/company/*"],
-  "js": ["contentscript.js"]
+    "matches": ["*://*.linkedin.com/company/*"],
+    "js": ["scripts/contentscript.js"],
+    "css": [ "css/quiz.css" ]
   }
-],  
+],
   "manifest_version": 2
 }
