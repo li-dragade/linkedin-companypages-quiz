@@ -1,38 +1,41 @@
-[
-    {
-    "question": "What is Tesla's mission?",
-    "answers": [
-    	"To accelerate the world’s transition to sustainable energy.", 
-        "To make electric vehicles the best cars, period.", 
-        "To open new factories everyday.",
-        "To help customers decrease their environmental impact."
-    ]
-}, 
 {
-    "question": "What type of company is Tesla?",
-    "answers": [
-    	"Public Company",
-        "Private Limited Company",
-        "Partnership",
-        "Sole Proprietorship"
-    ]
-},
-{
-    "question": "What year was Tesla founded?",
-    "answers": [
-        "2003",
-        "2005",
-        "1998",
-        "2012"
-    ]
-}, 
-{
-    "question": "Which of the following is true about Tesla Motors?",
-    "answers": [
-    	"It strives to accomplish what others deem impossible.",
-        "It produces clean energy generation and storage products.",
-        "It makes electric vehicles in partnership with other companies.",
-        "It produces weapons for defense and aerospace industries."
+    "summary": "Tesla is a public company based in the United States that is dedicated to accelerating the world's transition to sustainable energy. It produces electric vehicles and clean energy/storage products in pursuit of its mission. Tesla has grown rapidly since its founding in 2003, and is now operating with over 10,000 employees. It is dedicated to innovation and customer satisfaction, aiming to make the best cars, period, and reduce their environmental impact.",
+    "quiz": [
+        {
+            "question": "What is Tesla's mission?",
+            "answers": [
+                "To accelerate the world’s transition to sustainable energy.",
+                "To make electric vehicles the best cars, period.",
+                "To open new factories everyday.",
+                "To help customers decrease their environmental impact."
+            ]
+        },
+        {
+            "question": "What type of company is Tesla?",
+            "answers": [
+                "Public Company",
+                "Private Limited Company",
+                "Partnership",
+                "Sole Proprietorship"
+            ]
+        },
+        {
+            "question": "What year was Tesla founded?",
+            "answers": [
+                "2003",
+                "2005",
+                "1998",
+                "2012"
+            ]
+        },
+        {
+            "question": "Which of the following is true about Tesla Motors?",
+            "answers": [
+                "It strives to accomplish what others deem impossible.",
+                "It produces clean energy generation and storage products.",
+                "It makes electric vehicles in partnership with other companies.",
+                "It produces weapons for defense and aerospace industries."
+            ]
+        }
     ]
 }
-]

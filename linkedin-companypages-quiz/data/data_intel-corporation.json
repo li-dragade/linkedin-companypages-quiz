@@ -1,37 +1,41 @@
-[{
-  "question": "Which technology is powered by Intel?",
-  "answers": [
-    "Self-driving cars, analytics, cloud-to-edge technology, and artificial intelligence.",
-    "Medicine, media, engineering, and intelligence.",
-    "Robotics, 3D-printing, audio engineering, and automation.",
-    "Cybersecurity, network engineering, logistics, and data science."
-  ]
-},
 {
-  "question": "What type of company is Intel?",
-  "answers": [
-    "Public company.",
-    "Non-profit organization.",
-    "Private company.",
-    "Startup."
-  ]
-},
-{
-  "question": "When was Intel founded?",
-  "answers": [
-    "Intel was not founded.",
-    "1970.",
-    "2000.",
-    "1985."
-  ]
-},
-{
-  "question": "On which stock exchange is Intel listed?",
-  "answers": [
-    "NASDAQ.",
-    "NYSE.",
-    "TSX.",
-    "LSE."
+  "summary": "Intel Corporation is a publicly traded company based in the United States and listed on the NASDAQ with the stock symbol INTC. Intel's main focus is on semiconductor design and manufacturing, artificial intelligence, autonomous driving, and non-volatile memory solutions. They work to shape the future of technology in order to create a better future for the entire world. Intel is headquartered in the San Francisco Bay Area and is a large employer with over 10,000+ employees.",
+  "quiz": [
+    {
+      "question": "Which technology is powered by Intel?",
+      "answers": [
+        "Self-driving cars, analytics, cloud-to-edge technology, and artificial intelligence.",
+        "Medicine, media, engineering, and intelligence.",
+        "Robotics, 3D-printing, audio engineering, and automation.",
+        "Cybersecurity, network engineering, logistics, and data science."
+      ]
+    },
+    {
+      "question": "What type of company is Intel?",
+      "answers": [
+        "Public company.",
+        "Non-profit organization.",
+        "Private company.",
+        "Startup."
+      ]
+    },
+    {
+      "question": "When was Intel founded?",
+      "answers": [
+        "Intel was not founded.",
+        "1970.",
+        "2000.",
+        "1985."
+      ]
+    },
+    {
+      "question": "On which stock exchange is Intel listed?",
+      "answers": [
+        "NASDAQ.",
+        "NYSE.",
+        "TSX.",
+        "LSE."
+      ]
+    }
   ]
 }
-]
