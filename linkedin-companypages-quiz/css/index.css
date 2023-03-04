@@ -14,23 +14,37 @@ body{
 }
 
 #main-wrapper {
-  height: 420px;
-  padding: 50px 0;
+  height: 550px;
   align-items: center;
   justify-content: center;
 }
 
 #main-wrapper h3 {
-  text-align: center;
+  text-align: left;
 }
 
-.company-logo img {
+.linkedin-logo img {
   margin-top: 8px;
-  height: 40px;
-  width: 40px;
+  height: 46px;
+  width: 70px;
+}
+.company-logo {
+  height: 90px;
+  width: 90px;
+  float: left;
+  margin: 10px 0px 0px -20px;
+  padding-right: 5px;
 }
 
 #company-title {
-  text-transform: uppercase;
-  text-align: center;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.company-info {
+  font-size: medium;
+}
+
+.btn {
+  padding-bottom: 20px;
 }

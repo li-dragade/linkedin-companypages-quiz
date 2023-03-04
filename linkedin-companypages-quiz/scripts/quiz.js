@@ -2,7 +2,7 @@
 
 let question_count = 0;
 let points = 0;
-let questions = [];
+let quizData = {};
 
 // only the content script can access DOM to get the company id :(
 // companyId = document.getElementById("organization-debug-entity-urn-id").innerHTML.split('\n')[1].trim()
@@ -17,42 +17,34 @@ document.addEventListener("DOMContentLoaded", function(){
 		fetch(chrome.extension.getURL('data/data_' + companyName + '.json'))
 				.then(response => response.json())
 				.then(data => {
-					questions = data;
-					show(question_count, companyName);
+					quizData = data;
+					console.log(quizData);
+					show(question_count);
 				});
 	});
 	}, false);
 
 document.getElementById('btn-next').addEventListener('click',function(){
-	if(question_count === questions.length -1){
+	if(question_count === quizData.quiz.length -1){
 		location.href = "final.html";
 	}
-	console.log(question_count);
-
-	let user_answer = document.querySelector("li.option.active").innerHTML;
-
-	if(user_answer == questions[question_count].answers[0]){
-		points += 10;
-		sessionStorage.setItem("points",points);
-	}
-	console.log(points);
-
 	question_count++;
 	show(question_count);
 }, false);
 
-function show(count, companyName){
-	let question = document.getElementById("questions");
-	let[first, second, third, fourth] = questions[count].answers;
 
-	question.innerHTML = `<h2>Q${count + 1}. ${questions[count].question}</h2>
+function show(count){
+	let question = document.getElementById("questions");
+	let[first, second, third, fourth] = quizData.quiz[count].answers;
+
+	question.innerHTML = `<h2>Q${count + 1}. ${quizData.quiz[count].question}</h2>
     <ul class="option_group">
     <li class="option">${first}</li>
     <li class="option">${second}</li>
     <li class="option">${third}</li>
     <li class="option">${fourth}</li>
     </ul>`;
-	toggleActive();
+	bindClickValidationEvent();
 }
 
 function toggleActive(){
@@ -67,4 +59,32 @@ function toggleActive(){
 			option[i].classList.add("active");
 		}
 	}
+}
+
+function bindClickValidationEvent() {
+	let questionOptions = document.querySelectorAll('li.option');
+	console.log(questionOptions);
+	questionOptions.forEach(item => {
+		item.addEventListener("click", function () {
+
+			let user_answer = document.querySelector("li.option.active");
+			if (user_answer === null) {
+				item.classList.add("active");
+				user_answer = item;
+				console.log(user_answer);
+			}
+
+			if(user_answer.innerHTML === quizData.quiz[question_count].answers[0]){
+				user_answer.classList.add("correct-answer");
+				points += 100/quizData.quiz.length;
+				sessionStorage.setItem("points",points);
+			} else {
+				user_answer.classList.add("wrong-answer")
+			}
+
+			document.querySelectorAll('li:not(.correct-answer, .wrong-answer)').forEach(function(e){
+				e.classList.add("disabled");
+			});
+		});
+	});
 }

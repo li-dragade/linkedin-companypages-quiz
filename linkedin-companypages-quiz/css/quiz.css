@@ -38,7 +38,7 @@ body{
 }
 .quiz_body{
   padding: 20px 40px;
-  background-color: #0B65C2;
+  background-color: #ffffff;
 }
 
 .option_group{
@@ -49,37 +49,103 @@ body{
 .option{
   display: block;
   width: 300px;
-  background-color: #fff;
+  background-color: #0B65C2;
   margin-bottom: 20px;
   padding: 15px 20px;
   border: 2px solid transparent;
   transition: 0.4s all;
+  color: #ffffff;
+}
+
+li {
+  position: relative; /* necessary for positioning the :after */
+}
+
+li.option {
+  list-style: none; /* remove normal bullet for done items */
+}
+
+li.correct-answer:after {
+  content: "";
+  background-color: transparent;
+
+  /* position the checkbox */
+  position: absolute;
+  right: -25px;
+  top: 50%;
+
+  /* setting the checkbox */
+  /* short arm */
+  width: 6px;
+  border-bottom: 3px solid #4D7C2A;
+  /* long arm */
+  height: 11px;
+  border-right: 3px solid #4D7C2A;
+
+  /* rotate the mirrored L to make it a checkbox */
+  transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+li.wrong-answer:before,
+li.wrong-answer:after {
+  content: "";
+  background-color: darkred;
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  width: 5%;
+  height: 4px;
+  border-right: 3px solid #4D7C2A;
+}
+
+li.wrong-answer::before {
+  transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+li.wrong-answer::after {
+  transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
 }
 
 .option:hover{
   cursor: pointer;
-  border: 2px solid #341f97;
-  color: #341f97;
+  color: #0B65C2;
+  background-color: #d7d6d6;
 }
 
 .option.active{
-  background-color: #341f97;
-  color: #fff;
+  cursor: pointer;
+  color: #0B65C2;
+  background-color: #d7d6d6;
+}
+
+.option.disabled,
+.option.disabled:hover{
+  cursor: none;
+  background-color: #0B65C2;
+  color: #ffffff;
 }
 
 .btn-next{
-  border: none;
+  border: solid 1px;
   padding: 15px 35px;
   background-color: #ffffff;
   color: #0B65C2;
   font-weight: bold;
   transition: 0.4s all;
+  display: block;
+  margin: 0 auto;
 }
 
 .btn-next:hover{
   cursor: pointer;
-  background-color: #BFF4FE;
-  color: #000;
+  background-color: #0B65C2;
+  color: #ffffff;
 }
 
 .award_icon{
