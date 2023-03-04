@@ -37,7 +37,7 @@ function show(count){
 	let question = document.getElementById("questions");
 	let[first, second, third, fourth] = quizData.quiz[count].answers;
 
-	question.innerHTML = `<h2>Q${count + 1}. ${quizData.quiz[count].question}</h2>
+	question.innerHTML = `<h5>Q${count + 1}. ${quizData.quiz[count].question}</h5>
     <ul class="option_group">
     <li class="option">${first}</li>
     <li class="option">${second}</li>
