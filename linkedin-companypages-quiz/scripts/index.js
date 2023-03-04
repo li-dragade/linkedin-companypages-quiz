@@ -2,7 +2,7 @@
 var companyLogoUrl = '';
 
 document.addEventListener("DOMContentLoaded", function(){
-  chrome.tabs.query({active: true}, function(tabs) {
+  chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     var tab = tabs[0];
     let code = `document.getElementsByClassName('org-top-card-primary-content__logo-container')[0].querySelector('img').getAttribute('src')`;
     let companyName = tab.url.split("/")[4]
